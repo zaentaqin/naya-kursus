@@ -23,6 +23,7 @@ func main() {
 
 		num, err := strconv.Atoi(input)
 		if err != nil {
+			fmt.Print("Salah masukan")
 			continue
 		}
 
