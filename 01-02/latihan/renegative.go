@@ -10,8 +10,7 @@ func makenegative(x int) int {
 }
 
 func main() {
-	nilai := makenegative(3)
-
-	fmt.Println(nilai)
+	fmt.Println(makenegative(3))
+	fmt.Println(makenegative(-3))
 
 }
