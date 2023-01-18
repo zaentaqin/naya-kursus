@@ -11,7 +11,6 @@ func main() {
 	fmt.Print("Masukkan nama: ")
 
 	input, _ := reader.ReadString('\n')
-	input = input[:len(input)-1]
 
 	fmt.Printf("Halo ! %s\n", input)
 }

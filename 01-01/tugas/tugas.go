@@ -19,7 +19,7 @@ func main() {
 		reader := bufio.NewReader(os.Stdin)
 		fmt.Print("Masukkan angka: ")
 		input, _ := reader.ReadString('\n')
-		input = input[:len(input)-1]
+		//input = input[:len(input)-1]
 
 		num, err := strconv.Atoi(input)
 		if err != nil {
