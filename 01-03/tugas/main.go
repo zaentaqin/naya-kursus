@@ -2,19 +2,22 @@ package main
 
 import "fmt"
 
-func multiplyArrayElements(arr []int) []int {
-	for i := 1; i < len(arr); i++ {
-		arr[i] = arr[i-1] * arr[i]
-		if arr[i] > 30 {
-			break
-		}
-	}
-	return arr
-}
-
 func main() {
-	arr := []int{2, 3, 4, 5}
-	fmt.Println("Original array: ", arr)
-	result := multiplyArrayElements(arr)
-	fmt.Println("Multiplied array: ", result)
+	n := []int{1, 2, 4, 7, 1}
+	k := 9
+
+	for i := 1; len(n) > 0; i++ {
+		fmt.Printf("Iterasi-%d\n", i)
+		var newSlice []int
+		for j := 0; j < len(n); j++ {
+			if n[j] <= k {
+				k -= n[j]
+				newSlice = append(newSlice, n[j])
+			}
+		}
+		fmt.Println(newSlice)
+		n = newSlice
+	}
+
+	fmt.Println("Hasil:", len(n))
 }
