@@ -13,7 +13,5 @@ func possitive(numbers []int) int {
 }
 
 func main() {
-
-	// number := []int{1, 5, -9, 3, 2}
 	fmt.Println(possitive([]int{1, 5, -9, 3, 2}))
 }
