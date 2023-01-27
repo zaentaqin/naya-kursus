@@ -17,7 +17,7 @@ func reduceArray(n []int, k int) int {
 }
 
 func main() {
-	n := []int{1, 2, 4, 7, 1}
+	n := []int{1, 2, 4, 2, 2}
 	k := 9
 	fmt.Println("Hasil:", reduceArray(n, k))
 }
