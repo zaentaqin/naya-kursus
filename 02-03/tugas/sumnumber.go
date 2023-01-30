@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func GetSum(a, b int) int {
+	var sum int
 	if a == b {
 		return a
 	}
-	var sum int
 	if a < b {
 		for i := a; i <= b; i++ {
 			sum += i
@@ -21,4 +21,6 @@ func GetSum(a, b int) int {
 
 func main() {
 	fmt.Println(GetSum(1, 1))
+	fmt.Println(GetSum(-1, 2))
+	fmt.Println(GetSum(5, 2))
 }
