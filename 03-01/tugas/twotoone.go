@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 	"runtime"
+	"strings"
 )
 
-/* func TwoToOne(a string, b string) string {
+func TwoToOne(a string, b string) string {
 	var c []string
 	str := a + b
 	for r := 'a'; r <= 'z'; r++ {
@@ -15,9 +16,9 @@ import (
 		}
 	}
 	return strings.Join(c, "")
-} */
+}
 
 func main() {
-	//fmt.Println(TwoToOne("qAwertyuioplkjh", "zaxmjkqwdfhiow"))
+	fmt.Println(TwoToOne("qAwertyuioplkjh", "zaxmjkqwdfhiow"))
 	fmt.Println(runtime.NumGoroutine())
 }
