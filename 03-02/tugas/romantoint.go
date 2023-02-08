@@ -21,15 +21,16 @@ func romanToInt(s string) int {
 			if i+1 < len(s) && s[i+1] == 'D' {
 				bil += 400
 				i++
+
 				continue
 			}
 
 			if i+1 < len(s) && s[i+1] == 'M' {
 				bil += 900
 				i++
+
 				continue
 			}
-
 			bil += 100
 		}
 		if s[i] == 'L' {
@@ -40,15 +41,16 @@ func romanToInt(s string) int {
 			if i+1 < len(s) && s[i+1] == 'L' {
 				bil += 40
 				i++
+
 				continue
 			}
 
 			if i+1 < len(s) && s[i+1] == 'C' {
 				bil += 90
 				i++
+
 				continue
 			}
-
 			bil += 10
 		}
 		if s[i] == 'V' {
@@ -59,15 +61,16 @@ func romanToInt(s string) int {
 			if i+1 < len(s) && s[i+1] == 'V' {
 				bil += 4
 				i++
+
 				continue
 			}
 
 			if i+1 < len(s) && s[i+1] == 'X' {
 				bil += 9
 				i++
+
 				continue
 			}
-
 			bil += 1
 		}
 	}

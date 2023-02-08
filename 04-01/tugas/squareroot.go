@@ -5,7 +5,7 @@ import "fmt"
 func isPowerOfTwo(n int) bool {
 
 	for n != 1 {
-		fmt.Println(n)
+		//fmt.Println(n)
 		if n%2 > 0 || n <= 0 {
 			return false
 		}
@@ -15,5 +15,7 @@ func isPowerOfTwo(n int) bool {
 }
 
 func main() {
+	fmt.Println(isPowerOfTwo(1))
 	fmt.Println(isPowerOfTwo(6))
+	fmt.Println(isPowerOfTwo(3))
 }
