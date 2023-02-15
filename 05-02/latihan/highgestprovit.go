@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func Minmax(arr []int) [2]int {
 	result := [2]int{}
@@ -22,10 +25,23 @@ func Minmax(arr []int) [2]int {
 	return result
 }
 
+func Soort(brr []int) [2]int {
+	ress := [2]int{}
+	sort.Ints(brr)
+
+	ress[0] = brr[0]
+	ress[1] = brr[len(brr)-1]
+
+	return ress
+
+}
+
 func main() {
 	a := []int{1, 2, 3, 4, 5}
 	fmt.Println(Minmax(a))
+	fmt.Println(Soort(a))
 
-	// b := []int{2334454, 5}
-	// fmt.Println(Minmax(b))
+	b := []int{2334454, 5}
+	fmt.Println(Minmax(b))
+	fmt.Println(Soort(b))
 }
