@@ -44,4 +44,7 @@ func main() {
 	b := []int{2334454, 5}
 	fmt.Println(Minmax(b))
 	fmt.Println(Soort(b))
+
+	C := []int{}
+	fmt.Println(Soort(C))
 }
