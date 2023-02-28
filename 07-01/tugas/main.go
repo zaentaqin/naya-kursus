@@ -12,33 +12,38 @@ type User struct {
 }
 
 type Data struct {
-	Type         string       `json:"type"`
-	Id           string       `json:"id"`
-	Attributtes  Attributtes  `json:"attributes"`
-	Relationship Relationship `json:"relationship"`
+	Type         string        `json:"type"`
+	Id           string        `json:"id"`
+	Attributes   Attributes    `json:"attributes"`
+	Relationship Relationships `json:"relationships"`
 }
-type Attributtes struct {
+
+type Attributes struct {
 	Title   string    `json:"title"`
 	Body    string    `json:"body"`
 	Created time.Time `json:"created"`
 	Update  time.Time `json:"update"`
 }
-type Relationship struct {
+
+type Relationships struct {
 	Author Author `json:"author"`
 }
+
 type Author struct {
 	Data DataAuthor `json:"data"`
 }
+
 type DataAuthor struct {
 	Id   string `json:"id"`
 	Type string `json:"type"`
 }
 
 type Included struct {
-	Type        string          `json:"type"`
-	Id          string          `json:"id"`
-	Attributtes AttributtesIncl `json:"attributes"`
+	Type       string          `json:"type"`
+	Id         string          `json:"id"`
+	Attributes AttributtesIncl `json:"attributes"`
 }
+
 type AttributtesIncl struct {
 	Name   string `json:"name"`
 	Age    int    `json:"age"`
