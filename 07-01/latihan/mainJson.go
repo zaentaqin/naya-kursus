@@ -13,7 +13,6 @@ type User struct {
 }
 
 func main() {
-
 	jsonString := `[
 	{
 	  "id": 5,
@@ -34,15 +33,11 @@ func main() {
 	  "phone": "08734732654"
 	}
   ]`
-
 	var data User
-
 	err := json.Unmarshal([]byte(jsonString), &data)
-
 	if err != nil {
 		panic(err)
 	}
 
 	fmt.Println(data)
-
 }

@@ -9,7 +9,6 @@ func solution(str, ending string) bool {
 	if a < b {
 		return false
 	}
-	// Your code here!
 	return str[a-b:] == ending
 
 }
