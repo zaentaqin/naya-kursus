@@ -10,7 +10,6 @@ func solution(str, ending string) bool {
 		return false
 	}
 	return str[a-b:] == ending
-
 }
 
 func main() {
